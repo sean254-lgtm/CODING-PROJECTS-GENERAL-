@@ -1,0 +1,64 @@
+/* Display inline-block for all span elements */
+span {
+  display: inline-block;
+}
+
+/* Background gradient for rows based on reading status */
+tr[class="read"] {
+  background-image: linear-gradient(to right, lightgreen, white);
+}
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, lightblue, white);
+}
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, lightyellow, white);
+}
+
+/* Attribute selectors for span.status inside different row types */
+tr[class="read"] span[class="status"] {
+  border: 1px solid green;
+  background-image: linear-gradient(to right, green, white);
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 1px solid blue;
+  background-image: linear-gradient(to right, blue, white);
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 1px solid orange;
+  background-image: linear-gradient(to right, orange, white);
+}
+
+/* Attribute selector for span.status and span starting with rate */
+span[class="status"],
+span[class^="rate"] {
+  height: 20px;
+  width: auto;
+  padding: 2px 6px;
+}
+
+/* Direct children of span elements with class starting with rate */
+span[class^="rate"] > span {
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 2px;
+  height: 10px;
+  width: 10px;
+  background-color: lightgray;
+}
+
+/* One star rating - first child */
+span[class~="one"] > span:first-child {
+  background-image: linear-gradient(to bottom, gold, white);
+}
+
+/* Two star rating - first two children */
+span[class~="two"] > span:nth-child(-n+2) {
+  background-image: linear-gradient(to bottom, gold, white);
+}
+
+/* Three star rating - all three children */
+span[class~="three"] > span {
+  background-image: linear-gradient(to bottom, gold, white);
+}

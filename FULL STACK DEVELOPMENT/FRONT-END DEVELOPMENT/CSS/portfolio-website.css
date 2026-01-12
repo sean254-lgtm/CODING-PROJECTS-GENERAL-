@@ -1,0 +1,96 @@
+/* Reset default margins */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.img-a{
+    width: 50%;
+    height: 70%;
+}
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 0;
+  z-index: 1000;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  color: #00bfff;
+}
+
+/* Welcome Section */
+#welcome-section {
+  height: 100vh; /* full viewport height */
+  background: linear-gradient(to bottom, #00bfff, #004080);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Projects Section */
+#projects-section {
+  padding: 100px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.project-tile {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-tile a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Profile Link */
+#profile-link {
+  display: inline-block;
+  margin: 40px auto;
+  text-decoration: none;
+  color: white;
+  background-color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Media Query (required) */
+@media (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+  }
+
+  #welcome-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .project-tile {
+    width: 90%;
+  }
+}

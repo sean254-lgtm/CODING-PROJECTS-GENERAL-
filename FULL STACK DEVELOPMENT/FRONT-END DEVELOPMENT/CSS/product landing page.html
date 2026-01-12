@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="product-landing-page.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <img
+        id="header-img"
+        src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+        alt="Company Logo"
+      />
+      <nav id="nav-bar">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#video-section">Demo</a>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </nav>
+    </header>
+
+    <!-- Hero / Form Section -->
+    <section id="hero">
+      <h1>Welcome to Reactify Widgets!</h1>
+      <p>Next-generation customizable UI components.</p>
+      <form
+        id="form"
+        action="https://www.freecodecamp.org/email-submit"
+        method="post"
+      >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email address"
+          required
+        />
+        <input type="submit" id="submit" value="Get Started" />
+      </form>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+      <h2>Features</h2>
+      <div class="feature-list">
+        <div class="feature">
+          <h3>Fast Setup</h3>
+          <p>Plug and play components to speed up your development.</p>
+        </div>
+        <div class="feature">
+          <h3>Customizable</h3>
+          <p>Style everything to match your brand perfectly.</p>
+        </div>
+        <div class="feature">
+          <h3>Responsive</h3>
+          <p>Looks great on mobile, tablet, and desktop.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video-section">
+      <h2>Watch Our Demo</h2>
+      <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/dGcsHMXbSOA"
+        title="Product Demo"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Basic</h3>
+          <p>$9/month</p>
+        </div>
+        <div class="price-card">
+          <h3>Pro</h3>
+          <p>$29/month</p>
+        </div>
+        <div class="price-card">
+          <h3>Enterprise</h3>
+          <p>$99/month</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Reactify Widgets Inc.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Movie feedback</h1>
+    <p id="description">We appreciate you for attending the movie premeire, now we kindly ask for your honest view about the movie. </p>
+    <form id="survey-form">
+      <label for="name"id="name-label">Name:</label>
+      <input type="text"id="name"required max="4"placeholder="name"value="name">
+      <label for="email"id="email-label">E-mail address:</label>
+      <input type="email"id="email"name="email"required maxchar="21"placeholder="address"value="email">
+      <label for="number"id="number-label">Age:</label>
+      <input type="number"id="number"name="number"required min="2"max="1"placeholder="age"value="number">
+      <p>Which is your best universe?</p>
+      <select id="dropdown">
+        <option>Marvel</option>
+        <option>DC</option>
+      </select>
+      <p>Which movie did you like best?</p>
+      <br>
+      <p>Recent</p>
+      <label for="name">Superman legacies</label>
+      <input type="radio"id="name"name="name"value="name">
+      <label for="name">Fantastic four:first steps</label>
+      <input type="radio"id="name"name="name"value="name">
+      <p>Previous<p>
+      <label for="en">Captain america: brave new world</label>
+      <input type="checkbox"id="en"name="en"value="en">
+      <label for="en">Thunderbolts</label>
+      <input type="checkbox"id="en"name="en"value="en">
+      <p>Give your personal experience and recommendations.</p>
+      <textarea></textarea>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>

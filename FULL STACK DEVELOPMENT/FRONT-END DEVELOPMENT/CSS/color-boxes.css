@@ -1,0 +1,22 @@
+body{
+  background-color: #f4f4f4; 
+}
+.color-box{
+  width: 100px;
+  height: 100px;
+}
+.color1{
+  background-color: #0000FF;
+}
+.color2{
+  background-color: rgb(0,255,0);
+}
+.color3{
+  background-color: purple;
+}
+.color4{
+  background-color: hsl(0, 100%, 50%);
+}
+.color5{
+  background-color: #77DD77;
+}
