@@ -1,37 +1,54 @@
-body{
-  background-color: grey;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body{
+  background-color: #f0f0eb;
+}
+
 .blog-post-card{
   background-color: white;
-  border-radius: 20px;
   width: 400px;
   text-align: center;
-  margin-top: auto;
-}
-.post-img{
-  background-size: contain;
-  border-bottom: 2px solid black;
-  width: 100%;
-}
-.post-content{
-  padding: 20px;
-}
-.post-title{
-  color: red;
-  margin: 40px;
-}
-.post-excerpt{
-  color: green;
-  margin: 40px;
-}
-a{
-  color: brown;
-  background-color: pink;
-  margin: 50px;
+  margin: 50px auto;
   padding: 20px;
   border-radius: 20px;
-  display: inline-block;
 }
+
+.post-img{
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  background-size: contain;
+}
+
+.post-content{
+  padding: 10px;
+}
+
+.post-title{
+  color: purple;
+}
+
+.post-excerpt{
+  color: green;
+}
+
+.post-title, post-excerpt{
+  margin: 40px;
+}
+
+.read-more{
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+  padding: 20px;
+  display: inline-block;
+  background-color: #7febc3;
+  border-radius: 20px;
+}
+
 .read-more:hover{
-  background-color: green;
+  background-color: #72bbf2;
 }
