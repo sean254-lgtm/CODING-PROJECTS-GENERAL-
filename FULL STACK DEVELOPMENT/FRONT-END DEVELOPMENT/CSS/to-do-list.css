@@ -1,18 +1,53 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 a{
   text-decoration: none;
 }
 a:link{
-  color: green;
+  color: purple;
 }
 a:visited{
-  color: aqua;
+  color: green;
 }
 a:hover{
-  color: red;
+  color: black;
 }
 a:focus{
-  outline: 2px solid pink
+  border: 1px solid black;
 }
 a:active{
   color: brown;
+}
+
+body{
+  background-color: #f5f0f0;
+}
+h1{
+  text-align: center;
+  margin: 10px
+}
+
+.list-container{
+  background-color: #fff;
+  width: 400px;
+  margin: 20px auto;
+  padding: 5px;
+  border-radius: 20px;
+   box-shadow: 4px 4px 10px gray
+}
+
+.todo-list, li{
+  list-style: none;
+  padding: 20px
+}
+
+li{
+  background-color: 
+#9beb9d;
+  margin: 20px;
+  border-radius: 20px;
 }
