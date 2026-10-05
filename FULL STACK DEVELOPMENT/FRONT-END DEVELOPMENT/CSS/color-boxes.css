@@ -1,22 +1,31 @@
 body{
-  background-color: #f4f4f4; 
+  background-color: #f4f4f4;
 }
+
 .color-box{
   width: 100px;
   height: 100px;
+  margin: 20px;
+  border-radius: 10px;
+  display: inline-block;
 }
+
 .color1{
-  background-color: #0000FF;
+  background-color: #2373F4;
 }
+
 .color2{
-  background-color: rgb(0,255,0);
+  background-color: rgb(87, 142, 245);
 }
+
 .color3{
-  background-color: purple;
+  background-color: aqua;
 }
+
 .color4{
-  background-color: hsl(0, 100%, 50%);
+  background-color: hsl(271, 54%, 43%);
 }
+
 .color5{
-  background-color: #77DD77;
+  background-color: #F2F7A0;
 }
