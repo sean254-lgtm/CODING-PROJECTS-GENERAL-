@@ -1,6 +1,7 @@
 body{
-  background-color: #bd34eb;
+  background-color: #76ABAE;
 }
+
 #playing-cards{
   display: flex;
   justify-content: center;
@@ -13,12 +14,14 @@ body{
   justify-content: space-between;
   width: 200px;
   height: 200px;
-  background: #eae1ed;
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid #000;
+  background-color: #EFE8DD;
+  font-size: 50px;
+  margin: 20px;
+  padding: 20px;
   border-radius: 10px;
+  border: 1px solid #000;
   box-shadow: 0 0 10px #000;
+  color: #303841
 }
 
 .left{
@@ -37,11 +40,6 @@ body{
   align-self: flex-end;
 }
 
-.left, .middle, .right{
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
 .one, .two{
-  color: red;
+  color: #FF5722;
 }
